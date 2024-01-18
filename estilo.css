@@ -4,7 +4,7 @@
 
     color: rgb(58, 58, 58);
     width: 90%;
-    
+
     background: rgba(242, 242, 242, 1);
     background: -moz-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 242, 242, 1)), color-stop(28%, rgba(242, 242, 242, 1)), color-stop(50%, rgba(242, 242, 242, 1)), color-stop(74%, rgba(242, 242, 242, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
@@ -13,12 +13,18 @@
     background: -ms-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
     background: linear-gradient(to right, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#f2f2f2', GradientType=1);
-    
+
     font-family: 'MuseoModerno', sans-serif;
     border: 1px dotted darkred;
     margin: 1% auto;
 
 
+}
+
+.click {
+
+    margin: 10% auto;
+    text-align: center;
 }
 
 
@@ -104,7 +110,7 @@
     border-top-right-radius: 15%;
     border-top-left-radius: 15%;
     box-shadow: 0px -1px 1px rgba(63, 63, 58, 0.411);
-    
+
 
 
 }
@@ -220,11 +226,6 @@ form {
         font-size: 0.5em;
     }
 
-    canvas {
-
-        margin: 0 150px;
-    }
-
 }
 
 .botones {
@@ -232,7 +233,7 @@ form {
     margin: 0 auto;
     text-align: center;
     height: 50px;
-   
+
 }
 
 
