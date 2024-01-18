@@ -179,7 +179,7 @@ form {
 
         height: auto;
         margin: 2% auto;
-        width: auto;
+        width: 100%;
 
 
     }
@@ -226,6 +226,8 @@ form {
 
         font-size: 0.2em;
     }
+
+    
 
 }
 
