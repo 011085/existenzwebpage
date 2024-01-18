@@ -54,7 +54,7 @@ function draw() {
 
 function mouseClicked() {
     // Verificar si el click se realizó dentro de la ellipse
-    if (mouseX > 200 && mouseX < 1500 && mouseY > 150 && mouseY < 1500) {
+    if (mouseX > 0 && mouseX < 1500 && mouseY > 0 && mouseY < 1500) {
         // Redireccionar a una página web
         window.location.href = 'home.html';
     }
