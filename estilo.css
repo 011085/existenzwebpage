@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
+
+.container-fluid {
+
+    color: rgb(58, 58, 58);
+    width: 90%;
+    
+    background: rgba(242, 242, 242, 1);
+    background: -moz-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(242, 242, 242, 1)), color-stop(28%, rgba(242, 242, 242, 1)), color-stop(50%, rgba(242, 242, 242, 1)), color-stop(74%, rgba(242, 242, 242, 1)), color-stop(100%, rgba(242, 242, 242, 1)));
+    background: -webkit-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
+    background: -o-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
+    background: linear-gradient(to right, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 28%, rgba(242, 242, 242, 1) 50%, rgba(242, 242, 242, 1) 74%, rgba(242, 242, 242, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#f2f2f2', GradientType=1);
+    
+    font-family: 'MuseoModerno', sans-serif;
+    border: 1px dotted darkred;
+    margin: 1% auto;
+
+
+}
+
+
+
+.page-header>h1 {
+
+    width: auto;
+    margin: 0 3%;
+
+}
+
+
+
+.nav {
+
+
+    width: auto;
+    margin: 0 3%;
+    padding: 1%;
+}
+
+
+.row-entrevista {
+
+    overflow: auto;
+    padding: 1%;
+
+
+
+}
+
+.album {
+
+    margin: 2% auto;
+}
+
+
+.row {
+
+    margin: 0 auto;
+    padding: 2%;
+
+
+}
+
+.bio {
+
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+
+}
+
+
+.col-md-4>p {
+
+    text-align: justify;
+    padding: 1%;
+
+}
+
+
+.style5 {
+
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    border: 1px dotted darkred;
+    color: darkred;
+    padding: 1%;
+    text-decoration: none;
+
+}
+
+.formu {
+
+    margin: 0 auto;
+    color: black;
+    width: 60%;
+    background-color: rgba(255, 235, 205, 0.315);
+    padding: 2%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    box-shadow: 0px -1px 1px rgba(63, 63, 58, 0.411);
+    
+
+
+}
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto 3%;
+    padding: 1%;
+
+
+}
+
+
+.row-contacto {
+
+    margin: 0 auto;
+    padding: 1%;
+
+}
+
+.col-md-6 {
+
+    padding: 2%;
+}
+
+
+.titulos {
+
+    margin: 0px 0px;
+    width: auto;
+
+}
+
+
+.videos {
+
+    margin: 0 auto;
+
+}
+
+
+.entre {
+
+    list-style: none;
+    padding-top: 2%;
+    margin: 2% auto;
+
+}
+
+
+.store {
+
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .row-entrevista {
+
+        height: auto;
+        margin: 2% auto;
+
+
+    }
+
+    .bio {
+
+        margin: 0 auto;
+        display: block;
+        text-align: justify;
+        padding: 1%;
+
+    }
+
+    .row {
+
+        margin: 5% auto;
+    }
+
+    .bio>img {
+
+        margin: 0 auto;
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .formu {
+
+        width: auto;
+
+    }
+
+    form {
+
+        width: 70%;
+    }
+
+    .contacto {
+
+        width: auto;
+    }
+
+    .page-header>h1>small {
+
+        font-size: 0.5em;
+    }
+
+    canvas {
+
+        margin: 0 150px;
+    }
+
+}
+
+.botones {
+
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+   
+}
+
+
+footer {
+
+    margin: 0 auto;
+    text-align: center;
+    height: 100px;
+    width: 90%;
+    border: 1px dotted darkred;
+
+}
+
+footer>a>svg {
+
+    margin: 2% auto;
+}
