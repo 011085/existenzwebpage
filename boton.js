@@ -1,7 +1,7 @@
 // Obtener el botón
 var botonArriba = document.getElementById("boton-arriba");
 
-// Mostrar el botón cuando el usuario haya desplazado 20 píxeles desde la parte superior
+// Mostrar el botón 
 window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         botonArriba.style.display = "block";

@@ -1,40 +1,39 @@
 
-
+let canvas;
 let muchas = [];
 
 function setup() {
 
-    canvas = createCanvas(windowWidth, windowHeight);
+
+    canvas = createCanvas(windowWidth, windowHeight * 2);
     canvas.position(0, 0);
     canvas.style('z-index', '-1');
 
-    for (let i = 0; i<100; i++) {
-
+    for (let i = 0; i < 100; i++) {
         muchas[i] = new Cae();
     }
 
 }
 
 
+
 function windowResized() {
 
-    resizeCanvas(windowWidth, windowHeight);
+    resizeCanvas(windowWidth, windowHeight * 2);
 }
+
+
 
 
 function draw() {
 
-    background(255);
+    background(255, 10);
 
-    for (let i = 0; i<100; i++) {
+    for (let i = 0; i < 50; i++) {
 
-        muchas[i].mover;
-        muchas[i].mostrar;
+        muchas[i].mover();
+        muchas[i].mostrar();
     }
-
-    noStroke();
-    fill (255, 0, 0, 50);
-        ellipse (mouseX, mouseY , 20, 20);
 
 
 }
@@ -42,36 +41,33 @@ function draw() {
 
 class Cae {
 
-    constructu() {
+    constructor() {
 
         this.xpos = random(width);
         this.ypos = random(-height);
-        this.acelera = random (0.1, 0.6);
-        this.velo = 0
-        
+        this.velo = 0;
+        this.acelera = random(0.01, 0.05);
     }
+
+
 
     mostrar() {
 
-        stroke(255, 10);
         
-        circle (this.xpos, this.ypos, 70);
+        fill(0, 10);
+        ellipse(this.xpos, this.ypos, 3, 3);
     }
 
-mover() {
+    mover() {
 
-    this.velo += this.acelera;
-    this.ypos += this.velo;
+        this.velo += this.acelera;
+        this.ypos += this.velo;
 
-    if (this.ypos>height) {
+        if (this.ypos > height) {
 
-        this.ypos = 0;
-        this.acelera = 0;
-        this.xpos = random(width);
+            this.ypos = 0;
+            this.acelera = 0;
+            this.xpos = random(width);
+        }
     }
-
-    
-}
-
-
 }

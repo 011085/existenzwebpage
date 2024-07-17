@@ -4,14 +4,20 @@ let xdire = 1;
 let canvas;
 
 let fuente;
+//clase
+let muchas = [];
 
 
 function setup() {
-    
+
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0);
     canvas.style('z-index', '-1');
     fuente = loadFont('mus.ttf');
+
+    for (let i = 0; i < 100; i++) {
+        muchas[i] = new Cae();
+    }
 
 }
 
@@ -24,27 +30,32 @@ function windowResized() {
 
 function draw() {
 
+   
+
     xpos += xdire * 1;
 
-    background(255);
+    background(55, 50);
     noStroke();
-    fill(random(0, 200), 0, 0, 5);
+    fill(random(0, 200), 0, 0, 25);
     ellipse(width / 2, height / 2, 100, 100);
-    stroke(20, 50);
-    textSize(20);
-    textFont(fuente);
-    text("Click here to intro", width/2, height/2);
-    stroke(200, 0, 0, 50);
-    text("Welcome Existenz site", mouseX, mouseY);
+
 
     for (let i = 0; i < 10; i += 10) {
 
         stroke(0);
-        line(0 -  xpos, height / 2 + i - xpos, width + xpos, height / 2 + i - xpos);
-        line(0 -  xpos, height / 2 + i + xpos, width + xpos, height / 2 + i + xpos);
-        line(width/2 + i + xpos, height / 2 , width/2 + i - xpos, height);
-        line(width/2 + i + xpos, height / 2 , width/2 + i - xpos, 0);
+        strokeWeight(2);
+        line(0 - xpos, height / 2 + i - xpos, width + xpos, height / 2 + i - xpos);
+        line(0 - xpos, height / 2 + i + xpos, width + xpos, height / 2 + i + xpos);
+        line(width / 2 + i + xpos, height / 2, width / 2 + i - xpos, height);
+        line(width / 2 + i + xpos, height / 2, width / 2 + i - xpos, 0);
     }
+
+    stroke(20, 150);
+    textSize(20);
+    textFont(fuente);
+    text("Click here to intro", width / 2, height / 2);
+    stroke(200, 0, 0, 100);
+    text("Welcome Existenz site", width / 2 - 75, height / 2 - 25);
 
 
 
@@ -56,6 +67,13 @@ function draw() {
     if (xpos < -100) {
         xdire = xdire * -1;
     }
+
+
+    for (let i = 0; i < 50; i++) {
+
+        muchas[i].mover();
+        muchas[i].mostrar();
+    }
 }
 
 function mouseClicked() {
@@ -63,5 +81,39 @@ function mouseClicked() {
     if (mouseX > 0 && mouseX < 1000 && mouseY > 0 && mouseY < 1500) {
         // Redireccionar a una página web
         window.location.href = 'home.html';
+    }
+}
+
+class Cae {
+
+    constructor() {
+
+        this.xpos = random(width);
+        this.ypos = random(-height);
+        this.velo = 0;
+        this.acelera = random(0.01, 0.05);
+    }
+
+
+
+    mostrar() {
+
+        
+        stroke(255, 50)
+        strokeWeight(4);
+        ellipse(this.xpos, this.ypos, 3, 3);
+    }
+
+    mover() {
+
+        this.velo += this.acelera;
+        this.ypos += this.velo;
+
+        if (this.ypos > height) {
+
+            this.ypos = 0;
+            this.acelera = 0;
+            this.xpos = random(width);
+        }
     }
 }
