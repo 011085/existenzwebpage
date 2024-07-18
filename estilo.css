@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
 
 
+html>body {
 
+    background-color: rgba(2, 2, 0, 0.938);
+}
 
 .container-fluid {
 
-    color: rgb(58, 58, 58);
+    color: rgb(158, 158, 158);
     width: 90%;
 
     background: rgba(129, 129, 129, 0.623);
@@ -246,7 +249,10 @@ footer {
 
 }
 
+
 footer>a>svg {
 
     margin: 2% auto;
+    padding: 1%;
+    background: rgba(129, 129, 129, 0.623);
 }

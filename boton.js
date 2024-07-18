@@ -5,6 +5,7 @@ var botonArriba = document.getElementById("boton-arriba");
 window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         botonArriba.style.display = "block";
+        
     } else {
         botonArriba.style.display = "none";
     }
