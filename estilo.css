@@ -246,6 +246,8 @@ footer {
     height: 100px;
     width: 90%;
     border: 1px dotted darkred;
+    background: rgba(129, 129, 129, 0.623);
+    border-radius: 20px;
 
 }
 
@@ -254,5 +256,6 @@ footer>a>svg {
 
     margin: 2% auto;
     padding: 1%;
-    background: rgba(129, 129, 129, 0.623);
+    border-radius: 20px;
+    background: rgba(202, 202, 202, 0.623);
 }
