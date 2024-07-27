@@ -6,8 +6,10 @@ window.onscroll = function () {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         botonArriba.style.display = "block";
         
+        
     } else {
         botonArriba.style.display = "none";
+        
     }
 }
 
@@ -15,4 +17,5 @@ window.onscroll = function () {
 function irArriba() {
     document.body.scrollTop = 0; // Para Safari
     document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+    
 }

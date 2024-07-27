@@ -20,6 +20,30 @@ html>body {
 
 }
 
+
+.slide {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+
+
+}
+
+
+.slide img {
+
+    height: 45vh;
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 2px;
+    opacity: 0.8;
+
+}
+
+
+
+
 .click {
 
     margin: 10% auto;
@@ -226,7 +250,27 @@ form {
         font-size: 0.2em;
     }
 
-    
+    .slide {
+
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+
+
+    }
+
+
+    .slide img {
+
+        height: 35vh;
+        border-radius: 30px;
+        border: 2px solid white;
+        padding: 2px;
+        opacity: 0.8;
+
+    }
+
+
 
 }
 
@@ -235,6 +279,7 @@ form {
     margin: 0 auto;
     text-align: center;
     height: 50px;
+
 
 }
 
