@@ -17,27 +17,30 @@
 
 
     <meta name="google-adsense-account" content="ca-pub-3261654172945333">
-
-    <link rel="stylesheet" href="estilo.css">
+    <title>EXISTENZ</title>
+    <!--CSS -->
+    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
-    <script src="boton.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-    <script src="boton.js"></script>
-    <script src="boton2.js"></script>
+    <!--JS -->
+    <script src="javascript/boton.js"></script>
+    <script src="javascript/boton2.js"></script>
 
-    <title>EXISTENZ</title>
+
 </head>
 
 <body>
     <div class="container-fluid">
 
-        <div class="page-header">
+        <div class="page-header animate__animated animate__backInLeft animate__delay-1s">
             <h1>Existenz <small>No noise | No life</small></h1>
         </div>
 
@@ -127,12 +130,28 @@
             </div>
         </div>
     </div>
-    <br>
+
+
     <div class="botones">
+
+        <button class="boton-redireccion" onclick="redirigirASitio12()">
+            <li role="presentation" style="list-style: none;"><a style="color: rgb(0, 0, 0);font-size:25px;"
+                    href="entre.html">
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span></a></li>
+        </button>
+
+
         <button onclick="irArriba()" id="boton-arriba"
-            style="font-size:20px; color:brown;background-color: goldenrod; border-radius: 10px;"><i
+            style="font-size:25px; color:brown;background-color: goldenrod; border-radius: 10px;"><i
                 class="fa fa-arrow-circle-up"></i>
         </button>
+
+        <button class="boton-redireccion" onclick="redirigirASitio9()">
+
+            <li role="presentation" style="list-style: none;"><a style="color: rgb(0, 0, 0);font-size:25px;"
+                    href="home.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></i></a></li>
+        </button>
+
     </div>
 
     <footer>

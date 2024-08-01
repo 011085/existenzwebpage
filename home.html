@@ -17,25 +17,23 @@
 
     <meta name="google-adsense-account" content="ca-pub-3261654172945333">
     <title>- EXISTENZ -</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="estilo.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-    <script src="boton.js"></script>
-    <script src="boton2.js"></script>
-
-
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
-
+    <!-- JS -->
+    <script src="javascript/boton.js"></script>
+    <script src="javascript/boton2.js"></script>
 
 </head>
 
@@ -43,12 +41,12 @@
 
 
 
-    <div class="container-fluid-home">
+    <div class="container-fluid" >
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
 
-        <div class="page-header">
+        <div class="page-header animate__animated animate__backInUp animate__delay-1s">
             <h1>Existenz <small>No noise | No life</small></h1>
         </div>
 
@@ -97,13 +95,13 @@
             <div class="col-md-12">
                 <div class="bio">
 
-                    <p><strong>Existenz is an experimental audiovisual project</strong> that began in 2017. A solo
+                    <p><strong>Existenz is an experimental audiovisual project</strong> that began in 2.017. A solo
                         effort by
                         Yamil Noise, it
                         has participated in exhibitions and events in Argentina, such as "Una Noche En Los Museos",
                         exhibit
                         by Arte Sonoro Universidad de Quilmes that took place in Museo de Artes Visuales V. Roverano in
-                        Quilmes. Other examples are works shown in Museo Comunitario de Artes Visuales e Histórico
+                        Quilmes. Other examples are works shown in Histórico Museo Comunitario de Artes Visuales of
                         Florencio
                         Varela in the city of the same name; La Cúpula Media Lab, Córdoba; and lastly, "Registro
                         Pasamontaña" in Rosario, Santa Fé.
@@ -123,6 +121,9 @@
                         By Thanassis.
                     </p>
 
+
+
+
                     <!-- 
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -138,7 +139,7 @@
                         </div>
                     </div>
 -->
-                    <img src="yam2.png"
+                    <img src="img/yam2.png"
                         style="margin: 0 auto;width: 100%;padding: 2%;border-radius: 50%;box-shadow: 5px 0px 1px goldenrod;">
 
                 </div>
@@ -146,17 +147,26 @@
         </div>
     </div>
 
-    <br>
-
-
-
-    </div>
-    <br>
     <div class="botones">
+
+        <button class="boton-redireccion" onclick="redirigirASitio9()">
+            <li role="presentation" class="active" style="list-style: none;"><a
+                    style="color: rgb(0, 0, 0);font-size:25px;" href="#">
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span></a></li>
+        </button>
+
+
         <button onclick="irArriba()" id="boton-arriba"
-            style="font-size:20px; color:brown;background-color: goldenrod; border-radius: 10px;"><i
+            style="font-size:25px; color:brown;background-color: goldenrod; border-radius: 10px;"><i
                 class="fa fa-arrow-circle-up"></i>
         </button>
+
+        <button class="boton-redireccion" onclick="redirigirASitio10()">
+
+            <li role="presentation" style="list-style: none;"><a style="color: rgb(0, 0, 0);font-size:25px;"
+                    href="disco.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></i></a></li>
+        </button>
+
     </div>
 
     <footer>

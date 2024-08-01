@@ -6,25 +6,11 @@ html>body {
     background-color: rgba(2, 2, 0, 0.938);
 }
 
-.container-fluid-home {
-
-    
-    background-repeat: no-repeat;
-    background-size: 150%;
-    background-position: -20% 5%;
-    width: 90%;
-    font-family: 'MuseoModerno', sans-serif;
-    border: 1px dotted goldenrod;
-    border-radius: 20px;
-    margin: 1% auto;
-
-
-}
 
 .container-fluid {
 
- 
-   
+
+
     width: 90%;
     font-family: 'MuseoModerno', sans-serif;
     border: 1px dotted goldenrod;
@@ -33,6 +19,8 @@ html>body {
 
 
 }
+
+
 
 /*
 
@@ -71,6 +59,10 @@ html>body {
 
     width: auto;
     margin: 0 3%;
+    background-color: rgba(218, 165, 32, 0.61);
+    border-radius: 10px;
+    padding: 1%;
+    
 
 }
 
@@ -81,7 +73,8 @@ html>body {
 
     width: auto;
     margin: 0 3%;
-    padding: 1%;
+    padding: 2%;
+
 }
 
 
@@ -151,6 +144,14 @@ html>body {
 
 
 
+}
+
+
+
+iframe {
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(218, 165, 32, 0.61);
 }
 
 
@@ -226,6 +227,19 @@ form {
 
 @media screen and (max-width: 650px) {
 
+    .container-fluid {
+
+
+        font-family: 'MuseoModerno', sans-serif;
+        border: 1px dotted goldenrod;
+        border-radius: 20px;
+        margin: 1% auto;
+
+
+    }
+
+
+
     .row-entrevista {
 
         height: auto;
@@ -277,6 +291,7 @@ form {
 
         font-size: 0.2em;
     }
+
     /*
 
     .slide {
@@ -300,15 +315,26 @@ form {
     }
 */
 
+    .botones {
+
+        margin: 0 auto;
+        text-align: center;
+        height: 50px;
+
+
+
+    }
+
 
 }
 
 .botones {
 
-    margin: 0 auto;
+    margin: 0 auto 5%;
     text-align: center;
+    align-items: center;
+    width: 90%;
     height: 50px;
-
 
 }
 
@@ -317,10 +343,10 @@ footer {
 
     margin: 0 auto;
     text-align: center;
-    height: 100px;
+    height: 130px;
     width: 90%;
-    border-radius: 20px;
+    border-radius: 10px;
+    background-color: rgba(218, 165, 32, 0.61);
+
 
 }
-
-
