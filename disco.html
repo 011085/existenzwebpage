@@ -11,7 +11,7 @@
     <meta name="og:image" content="yam2.png" />
     <meta name="og:url" content="http://existenz.com.ar" />
     <meta name="google-adsense-account" content="ca-pub-3261654172945333">
-    <title>///</title>
+    <title>EXISTENZ</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,12 +21,13 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-   
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
         integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-        
+
     <script src="boton.js"></script>
+    <script src="boton2.js"></script>
 
 
 
@@ -43,22 +44,42 @@
         </div>
 
         <ul class="nav nav-tabs">
-            <li role="presentation"><a
-                    style="color: rgb(255, 255, 255);border:1px dotted darkred;background-color: darkred;font-size: 10px;font-size: 10px;font-size:18px;"
-                    href="home.html"> <span class="glyphicon">&#xe021;</span></a></li>
-            <li role="presentation" class="active"><a
-                    style="color: rgb(255, 255, 255);border:1px dotted darkred;background-color: darkred;font-size: 10px;font-size: 10px;font-size:18px;"
-                    href="disco.html"><span class="glyphicon">&#xe035;</span></i></a></li>
-            <li role="presentation"><a
-                    style="color: rgb(255, 254, 254);border:1px dotted darkred;background-color: darkred;font-size: 10px;font-size: 10px;font-size:18px;"
-                    href="visual.html"><span class="glyphicon">&#xe009;</span></button></a></li>
-            <li role="presentation"><a
-                    style="color: rgb(255, 255, 255);border:1px dotted darkred;background-color: darkred;font-size: 10px;font-size:18px;"
-                    href="entre.html"><i class="glyphicon glyphicon-pencil"></i></a></li>
 
-            <li role="presentation"><a
-                    style="color: rgb(255, 255, 255);border:1px dotted darkred;background-color: darkred;font-size: 10px;font-size:18px;"
-                    href="contacto.html"><i class="fa fa-envelope-o"></i></a></li>
+            <!---botones-->
+
+            <button class="boton-redireccion" onclick="redirigirASitio9()">
+                <li role="presentation"><a style="color: rgb(0, 0, 0);font-size:25px;" href="home.html">
+                        <span class="glyphicon">&#xe021;</span></a></li>
+            </button>
+
+            <button class="boton-redireccion" onclick="redirigirASitio10()">
+
+                <li role="presentation" class="active"> <a style="color: rgb(0, 0, 0);font-size:25px;" href="disco.html"><span
+                            class="glyphicon">&#xe035;</span></i></a></li>
+            </button>
+
+            <button class="boton-redireccion" onclick="redirigirASitio11()">
+
+
+                <li role="presentation"><a style="color: rgb(0, 0, 0);font-size:25px;" href="visual.html"><span
+                            class="glyphicon">&#xe009;</span>
+            </button></a></li> </button>
+
+
+            <button class="boton-redireccion" onclick="redirigirASitio12()">
+
+                <li role="presentation"><a style="color: rgb(0, 0, 0);font-size:25px;" href="entre.html"><i
+                            class="glyphicon glyphicon-pencil"></i></a></li>
+            </button>
+
+            <button class="boton-redireccion" onclick="redirigirASitio13()">
+
+
+                <li role="presentation"><a style="color: rgb(0, 0, 0);font-size:25px;" href="contacto.html"><i
+                            class="fa fa-envelope-o"></i></a></li>
+            </button>
+
+            <!---botones-->
         </ul>
 
 
@@ -233,7 +254,7 @@
                         industrial.
                         Se incluyó la participación del músico <strong>Juan Jose Calarco</strong>, que participó con una
                         versión remix.</p>
-<!-- 
+                    <!-- 
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -248,8 +269,8 @@
                         </div>
                     </div>
                     -->
- 
-                           <img src="10.jpg"
+
+                    <img src="10.jpg"
                         style="text-align: center;width: 100%;border-top-left-radius: 15%;border-top-right-radius: 15%;">
 
                     <br>
@@ -276,34 +297,51 @@
     </div>
     <br>
     <div class="botones">
-        <button onclick="irArriba()" id="boton-arriba" style="font-size:20px; color:brown;background-color: goldenrod; border-radius: 10px;"><i class="fa fa-arrow-circle-up"></i>
+        <button onclick="irArriba()" id="boton-arriba"
+            style="font-size:20px; color:brown;background-color: goldenrod; border-radius: 10px;"><i
+                class="fa fa-arrow-circle-up"></i>
         </button>
     </div>
+
+
+
     <footer>
-        <a href="http://facebook.com/xznoise" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                <path
-                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
-                </path>
-            </svg>
-        </a>
 
-        <a href="https://veinte33records.bandcamp.com/album/nada" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                <path
-                    d="M 8.5957031 17 L 0 33 L 18.404297 33 L 27 17 L 8.5957031 17 z M 27 17 L 27 32.693359 L 29.373047 32.693359 L 29.373047 31.132812 L 29.416016 31.132812 C 30.164016 32.627813 31.813562 33 33.351562 33 C 36.715563 33 38.253906 30.120406 38.253906 27.066406 C 38.253906 23.747406 36.515594 21.021484 32.933594 21.021484 C 31.658594 21.021484 30.229828 21.703734 29.548828 22.802734 L 29.505859 22.802734 L 29.505859 17 L 27 17 z M 44.878906 21.021484 C 41.141906 21.021484 39.273438 23.704812 39.273438 27.132812 C 39.273437 30.473813 41.230016 33 44.791016 33 C 47.714016 33 49.538 31.372734 50 28.427734 L 47.494141 28.427734 C 47.251141 30.054734 46.241016 31.023438 44.791016 31.023438 C 42.615016 31.023437 41.779297 29.022813 41.779297 27.132812 C 41.779297 23.682813 43.603391 23 44.900391 23 C 46.285391 23 47.296141 23.748812 47.494141 25.132812 L 47.498047 25.132812 L 50 25.132812 C 49.759 22.341813 47.515906 21.021484 44.878906 21.021484 z M 32.605469 23 C 34.669469 23 35.747047 24.955484 35.748047 27.021484 C 35.748047 28.999484 34.891469 31.021484 32.605469 31.021484 C 30.583469 31.021484 29.417969 29.306484 29.417969 27.021484 C 29.417969 24.604484 30.496469 23 32.605469 23 z">
-                </path>
-            </svg>
-        </a>
+        <button class="boton-redireccion" onclick="redirigirASitio1()">
+            <a href="http://facebook.com/xznoise" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                    <path
+                        d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                    </path>
+                </svg>
+            </a>
+        </button>
 
-        <a href="https://www.discogs.com/es/artist/7408225-Existenz-5" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-                <path
-                    d="M 25 2 C 12.318 2 2 12.318 2 25 C 2 31.39 4.62175 37.177609 8.84375 41.349609 L 10.912109 39.179688 C 7.2641094 35.554688 5 30.537 5 25 C 5 13.972 13.972 5 25 5 C 28.326 5 31.457703 5.8284844 34.220703 7.2714844 L 35.626953 4.6113281 C 32.445953 2.9463281 28.832 2 25 2 z M 25 7 C 15.075 7 7 15.075 7 25 C 7 29.968 9.0230625 34.472422 12.289062 37.732422 L 14.359375 35.558594 C 11.667375 32.846594 10 29.115 10 25 C 10 16.729 16.729 10 25 10 C 27.483 10 29.822719 10.616453 31.886719 11.689453 L 33.287109 9.0371094 C 30.804109 7.7421094 27.989 7 25 7 z M 40.986328 8.4863281 L 38.912109 10.662109 C 42.660109 14.298109 45 19.378 45 25 C 45 36.028 36.028 45 25 45 C 21.595 45 18.388125 44.139813 15.578125 42.632812 L 14.230469 45.314453 C 17.445469 47.026453 21.11 48 25 48 C 37.682 48 48 37.683 48 25 C 48 18.525 45.306328 12.670328 40.986328 8.4863281 z M 25 12 C 17.832 12 12 17.832 12 25 C 12 28.546 13.430234 31.762375 15.740234 34.109375 L 19.884766 29.763672 C 18.718766 28.512672 18 26.84 18 25 C 18 21.14 21.14 18 25 18 C 26.134 18 27.203344 18.276813 28.152344 18.757812 L 30.953125 13.455078 C 29.167125 12.530078 27.146 12 25 12 z M 37.533203 12.107422 L 35.464844 14.275391 C 38.257844 17.001391 40 20.799 40 25 C 40 33.271 33.271 40 25 40 C 22.403 40 19.958172 39.335922 17.826172 38.169922 L 16.478516 40.849609 C 19.016516 42.219609 21.918 43 25 43 C 34.925 43 43 34.925 43 25 C 43 19.946 40.899203 15.379422 37.533203 12.107422 z M 34.087891 15.720703 L 29.951172 20.056641 C 31.216172 21.323641 32 23.072 32 25 C 32 28.859 28.86 32 25 32 C 23.694 32 22.474734 31.634766 21.427734 31.009766 L 18.726562 36.378906 C 20.588563 37.408906 22.726 38 25 38 C 32.168 38 38 32.168 38 25 C 38 21.367 36.498891 18.081703 34.087891 15.720703 z M 25 24 A 1 1 0 0 0 25 26 A 1 1 0 0 0 25 24 z">
-                </path>
-            </svg>
-        </a>
+
+
+        <button class="boton-redireccion" onclick="redirigirASitio2()">
+            <a href="https://veinte33records.bandcamp.com/album/nada" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                    <path
+                        d="M 8.5957031 17 L 0 33 L 18.404297 33 L 27 17 L 8.5957031 17 z M 27 17 L 27 32.693359 L 29.373047 32.693359 L 29.373047 31.132812 L 29.416016 31.132812 C 30.164016 32.627813 31.813562 33 33.351562 33 C 36.715563 33 38.253906 30.120406 38.253906 27.066406 C 38.253906 23.747406 36.515594 21.021484 32.933594 21.021484 C 31.658594 21.021484 30.229828 21.703734 29.548828 22.802734 L 29.505859 22.802734 L 29.505859 17 L 27 17 z M 44.878906 21.021484 C 41.141906 21.021484 39.273438 23.704812 39.273438 27.132812 C 39.273437 30.473813 41.230016 33 44.791016 33 C 47.714016 33 49.538 31.372734 50 28.427734 L 47.494141 28.427734 C 47.251141 30.054734 46.241016 31.023438 44.791016 31.023438 C 42.615016 31.023437 41.779297 29.022813 41.779297 27.132812 C 41.779297 23.682813 43.603391 23 44.900391 23 C 46.285391 23 47.296141 23.748812 47.494141 25.132812 L 47.498047 25.132812 L 50 25.132812 C 49.759 22.341813 47.515906 21.021484 44.878906 21.021484 z M 32.605469 23 C 34.669469 23 35.747047 24.955484 35.748047 27.021484 C 35.748047 28.999484 34.891469 31.021484 32.605469 31.021484 C 30.583469 31.021484 29.417969 29.306484 29.417969 27.021484 C 29.417969 24.604484 30.496469 23 32.605469 23 z">
+                    </path>
+                </svg>
+            </a>
+        </button>
+
+
+
+        <button class="boton-redireccion" onclick="redirigirASitio3()">
+            <a href="https://www.discogs.com/es/artist/7408225-Existenz-5" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                    <path
+                        d="M 25 2 C 12.318 2 2 12.318 2 25 C 2 31.39 4.62175 37.177609 8.84375 41.349609 L 10.912109 39.179688 C 7.2641094 35.554688 5 30.537 5 25 C 5 13.972 13.972 5 25 5 C 28.326 5 31.457703 5.8284844 34.220703 7.2714844 L 35.626953 4.6113281 C 32.445953 2.9463281 28.832 2 25 2 z M 25 7 C 15.075 7 7 15.075 7 25 C 7 29.968 9.0230625 34.472422 12.289062 37.732422 L 14.359375 35.558594 C 11.667375 32.846594 10 29.115 10 25 C 10 16.729 16.729 10 25 10 C 27.483 10 29.822719 10.616453 31.886719 11.689453 L 33.287109 9.0371094 C 30.804109 7.7421094 27.989 7 25 7 z M 40.986328 8.4863281 L 38.912109 10.662109 C 42.660109 14.298109 45 19.378 45 25 C 45 36.028 36.028 45 25 45 C 21.595 45 18.388125 44.139813 15.578125 42.632812 L 14.230469 45.314453 C 17.445469 47.026453 21.11 48 25 48 C 37.682 48 48 37.683 48 25 C 48 18.525 45.306328 12.670328 40.986328 8.4863281 z M 25 12 C 17.832 12 12 17.832 12 25 C 12 28.546 13.430234 31.762375 15.740234 34.109375 L 19.884766 29.763672 C 18.718766 28.512672 18 26.84 18 25 C 18 21.14 21.14 18 25 18 C 26.134 18 27.203344 18.276813 28.152344 18.757812 L 30.953125 13.455078 C 29.167125 12.530078 27.146 12 25 12 z M 37.533203 12.107422 L 35.464844 14.275391 C 38.257844 17.001391 40 20.799 40 25 C 40 33.271 33.271 40 25 40 C 22.403 40 19.958172 39.335922 17.826172 38.169922 L 16.478516 40.849609 C 19.016516 42.219609 21.918 43 25 43 C 34.925 43 43 34.925 43 25 C 43 19.946 40.899203 15.379422 37.533203 12.107422 z M 34.087891 15.720703 L 29.951172 20.056641 C 31.216172 21.323641 32 23.072 32 25 C 32 28.859 28.86 32 25 32 C 23.694 32 22.474734 31.634766 21.427734 31.009766 L 18.726562 36.378906 C 20.588563 37.408906 22.726 38 25 38 C 32.168 38 38 32.168 38 25 C 38 21.367 36.498891 18.081703 34.087891 15.720703 z M 25 24 A 1 1 0 0 0 25 26 A 1 1 0 0 0 25 24 z">
+                    </path>
+                </svg>
+            </a>
+        </button>
     </footer>
+
 
 
 </body>

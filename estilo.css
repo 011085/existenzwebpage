@@ -188,12 +188,25 @@ form {
 }
 
 
-.store {
 
-    margin: 0 auto;
-    text-align: center;
-    padding: 2%;
+
+.boton-redireccion {
+
+
+    border-radius: 10px;
+    background-color: goldenrod;
+    margin-top: 20px;
+    box-shadow: 5px 2px 10px black;
+
+
+
 }
+
+
+
+
+
+
 
 
 @media screen and (max-width: 650px) {
