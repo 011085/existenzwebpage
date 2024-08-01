@@ -34,7 +34,7 @@ function draw() {
 
     xpos += xdire * 1;
 
-    background(55, 50);
+    background(20, 100);
     noStroke();
     fill(random(0, 200), 0, 0, 25);
     ellipse(width / 2, height / 2, 100, 100);
@@ -53,8 +53,9 @@ function draw() {
     stroke(20, 150);
     textSize(20);
     textFont(fuente);
+    stroke(150, 150, 150, 100);
     text("Click here to intro", width / 2, height / 2);
-    stroke(200, 0, 0, 100);
+    stroke(155, 100, 0, 20);
     text("Welcome Existenz site", width / 2 - 75, height / 2 - 25);
 
 
@@ -91,7 +92,7 @@ class Cae {
         this.xpos = random(width);
         this.ypos = random(-height);
         this.velo = 0;
-        this.acelera = random(0.01, 0.05);
+        this.acelera = random(0.001, 0.005);
     }
 
 
@@ -99,9 +100,10 @@ class Cae {
     mostrar() {
 
         
-        stroke(255, 50)
-        strokeWeight(4);
-        ellipse(this.xpos, this.ypos, 3, 3);
+        stroke(155, 100, 0, 70);
+        text('no noise no life',this.xpos, this.ypos);
+        
+       
     }
 
     mover() {
