@@ -6,20 +6,35 @@ html>body {
     background-color: rgba(2, 2, 0, 0.938);
 }
 
-.container-fluid {
+.container-fluid-home {
 
-    color: rgb(158, 158, 158);
+    background-image: url("gifi.gif");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: 10% 15%;
     width: 90%;
-
-    background: rgba(129, 129, 129, 0.623);
     font-family: 'MuseoModerno', sans-serif;
-    border: 1px dotted darkred;
+    border: 1px dotted goldenrod;
     border-radius: 20px;
     margin: 1% auto;
 
 
 }
 
+.container-fluid {
+
+ 
+   
+    width: 90%;
+    font-family: 'MuseoModerno', sans-serif;
+    border: 1px dotted goldenrod;
+    border-radius: 20px;
+    margin: 1% auto;
+
+
+}
+
+/*
 
 .slide {
 
@@ -42,7 +57,7 @@ html>body {
 }
 
 
-
+*/
 
 .click {
 
@@ -116,8 +131,8 @@ html>body {
 
     margin: 0 auto;
     color: rgb(255, 255, 255);
-    border: 1px dotted darkred;
-    color: darkred;
+    border: 1px dotted goldenrod;
+    color: goldenrod;
     padding: 1%;
     text-decoration: none;
 
@@ -303,17 +318,8 @@ footer {
     text-align: center;
     height: 100px;
     width: 90%;
-    border: 1px dotted darkred;
-    background: rgba(129, 129, 129, 0.623);
     border-radius: 20px;
 
 }
 
 
-footer>a>svg {
-
-    margin: 2% auto;
-    padding: 1%;
-    border-radius: 20px;
-    background: rgba(202, 202, 202, 0.623);
-}
