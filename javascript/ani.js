@@ -92,7 +92,7 @@ class Cae {
         this.xpos = random(width);
         this.ypos = random(-height);
         this.velo = 0;
-        this.acelera = random(0.001, 0.005);
+        this.acelera = random(0.01, 0.15);
     }
 
 
