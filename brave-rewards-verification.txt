@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: existenz.com.ar
+Token: 60c4a26ab613a809275d4352cef38cef4188eacfd2ce4bf72ba7c7f5b1dec1ed
