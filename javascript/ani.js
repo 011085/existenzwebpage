@@ -10,7 +10,7 @@ let muchas = [];
 
 let bg;
 function preload() {
-  bg = loadImage('img/image_20.png');
+  bg = loadImage('img/image_101.jpg');
 }
 
 
