@@ -8,6 +8,12 @@ let fuente;
 let muchas = [];
 
 
+let bg;
+function preload() {
+  bg = loadImage('img/image_20.png');
+}
+
+
 function setup() {
 
     canvas = createCanvas(windowWidth, windowHeight);
@@ -15,10 +21,13 @@ function setup() {
     canvas.style('z-index', '-1');
     fuente = loadFont('mus.ttf');
 
+    background(bg, 0);
+
     for (let i = 0; i < 100; i++) {
         muchas[i] = new Cae();
     }
 
+    
 }
 
 
@@ -30,33 +39,37 @@ function windowResized() {
 
 function draw() {
 
-   
+    
 
     xpos += xdire * 1;
 
-    background(20, 100);
-    noStroke();
-    fill(random(0, 200), 0, 0, 25);
-    ellipse(width / 2, height / 2, 100, 100);
+   
+    image(bg, 0, 0, width, height);
+    
+    
 
-
-    for (let i = 0; i < 10; i += 10) {
+    for (let i = 0; i < 100; i +=5) {
 
         stroke(0);
         strokeWeight(2);
-        line(0 - xpos, height / 2 + i - xpos, width + xpos, height / 2 + i - xpos);
-        line(0 - xpos, height / 2 + i + xpos, width + xpos, height / 2 + i + xpos);
-        line(width / 2 + i + xpos, height / 2, width / 2 + i - xpos, height);
-        line(width / 2 + i + xpos, height / 2, width / 2 + i - xpos, 0);
+        line(0, height / 2 + i, width, height / 2 + i);
+        
     }
+
+    noStroke();
+    fill(random(255), 110);
+    ellipse(width / 2, height / 2, 60, 60);
+
+
+    
 
     stroke(20, 150);
     textSize(20);
     textFont(fuente);
-    stroke(150, 150, 150, 100);
+    stroke(150, 150, 150);
     text("Click here to intro", width / 2, height / 2);
-    stroke(155, 100, 0, 20);
-    text("Welcome Existenz site", width / 2 - 75, height / 2 - 25);
+    stroke(100, 100, 100);
+    text("Welcome Existenz site", width / 2 - 105, height / 2 - 25);
 
 
 
@@ -70,11 +83,12 @@ function draw() {
     }
 
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 100; i+= 20) {
 
         muchas[i].mover();
         muchas[i].mostrar();
     }
+   
 }
 
 function mouseClicked() {
@@ -92,7 +106,7 @@ class Cae {
         this.xpos = random(width);
         this.ypos = random(-height);
         this.velo = 0;
-        this.acelera = random(0.01, 0.15);
+        this.acelera = random(0.01, 0.05);
     }
 
 
@@ -100,7 +114,7 @@ class Cae {
     mostrar() {
 
         
-        stroke(155, 100, 0, 70);
+        stroke(100, 100, 100, 70);
         text('no noise no life',this.xpos, this.ypos);
         
        
