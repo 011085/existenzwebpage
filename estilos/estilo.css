@@ -3,21 +3,32 @@
 
 
 
+
+
 .container-fluid {
 
 
 
     width: 90%;
     font-family: 'MuseoModerno', sans-serif;
-    border: 1px dotted rgba(255, 255, 255, 0.493);
+    border: 1px dotted rgba(255, 255, 255, 0.123);
     border-radius: 20px;
     margin: 1% auto;
-    color:aliceblue;
-    
-
+    color:rgb(127, 195, 255);
+    background-color: rgba(0, 0, 0, 0.493);
+    box-shadow: 0 1px 25px rgba(255, 255, 255, 0.096);
 
 }
 
+
+
+.page-header {
+
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+   
+}
 
 
 /*
@@ -45,6 +56,21 @@
 
 */
 
+
+
+
+
+.new
+{
+
+    text-align: center;
+    border: 1px dotted rgba(255, 255, 255, 0.11);
+    width: 90%;
+    font-family: 'MuseoModerno', sans-serif;
+    margin: auto;
+    
+}
+
 .click {
 
     margin: 10% auto;
@@ -53,25 +79,12 @@
 
 
 
-.page-header>h1 {
-
-    width: auto;
-    margin: 0 3%;
-    background-color: rgba(0, 0, 0, 0.274);
-    border-radius: 10px;
-    padding: 1%;
-    
-
-}
-
-
 
 .nav {
 
-
     width: auto;
     margin: 0 3%;
-    padding: 2%;
+    padding: 2%;   
     
 
 }
@@ -124,8 +137,8 @@
 
     margin: 0 auto;
     color: rgb(255, 255, 255);
-    border: 1px dotted rgba(189, 189, 189, 0.418);
-    color: rgb(255, 255, 255);
+    border: 1px dotted rgba(189, 189, 189, 0.123);
+    color:rgb(127, 195, 255);
     padding: 1%;
     text-decoration: none;
 
@@ -180,6 +193,7 @@ form {
 }
 
 
+
 .titulos {
 
     margin: 0px 0px;
@@ -220,18 +234,13 @@ form {
 
 
 
-
-
-
-
-
 @media screen and (max-width: 650px) {
 
     .container-fluid {
 
 
         font-family: 'MuseoModerno', sans-serif;
-        border: 1px dotted rgba(255, 255, 255, 0.493);
+        border: 1px dotted rgba(255, 255, 255, 0.164);
         border-radius: 20px;
         margin: 1% auto;
 
@@ -263,6 +272,14 @@ form {
         margin: 5% auto;
     }
 
+
+    .new {
+
+
+        width: 100%;
+
+    }
+
     .bio>img {
 
         margin: 0 auto;
@@ -289,8 +306,10 @@ form {
 
     .page-header>h1>small {
 
-        font-size: 0.2em;
+        font-size: 0.5em;
     }
+
+
 
     /*
 
@@ -346,7 +365,7 @@ footer {
     height: 130px;
     width: 90%;
     border-radius: 10px;
-   background-color: rgba(11, 1, 97, 0.527);
+   background-color: rgba(11, 1, 97, 0.308);
 
 
 }

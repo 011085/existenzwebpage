@@ -61,8 +61,6 @@ function draw() {
     ellipse(width / 2, height / 2, 60, 60);
 
 
-    
-
     stroke(20, 150);
     textSize(20);
     textFont(fuente);
@@ -98,6 +96,8 @@ function mouseClicked() {
         window.location.href = 'home.html';
     }
 }
+
+
 
 class Cae {
 
