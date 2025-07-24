@@ -7,10 +7,12 @@ window.onscroll = function () {
         botonArriba.style.display = "block";
 
 
-    } else {
+    } 
+    
+    //else {
         botonArriba.style.display = "none";
 
-    }
+    //}
 }
 
 // Función para desplazarse hacia arriba al hacer clic en el botón
