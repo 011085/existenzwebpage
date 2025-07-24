@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap');
 
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 
 
 
@@ -14,7 +25,7 @@
     border: 1px dotted rgba(255, 255, 255, 0.123);
     border-radius: 20px;
     margin: 1% auto;
-    color:rgb(127, 195, 255);
+    color: rgb(127, 195, 255);
     background-color: rgba(0, 0, 0, 0.493);
     box-shadow: 0 1px 25px rgba(255, 255, 255, 0.096);
 
@@ -27,7 +38,7 @@
     text-align: center;
     margin: auto;
     padding: 1%;
-   
+
 }
 
 
@@ -60,20 +71,19 @@
 
 
 
-.new
-{
+.new {
 
     text-align: center;
     border: 1px dotted rgba(255, 255, 255, 0.11);
     width: 90%;
     font-family: 'MuseoModerno', sans-serif;
     margin: auto;
-    
+
 }
 
 .click {
 
-    margin: 10% auto;
+    margin: 3rem auto;
     text-align: center;
 }
 
@@ -84,8 +94,8 @@
 
     width: auto;
     margin: 0 3%;
-    padding: 2%;   
-    
+    padding: 2%;
+
 
 }
 
@@ -138,7 +148,7 @@
     margin: 0 auto;
     color: rgb(255, 255, 255);
     border: 1px dotted rgba(189, 189, 189, 0.123);
-    color:rgb(127, 195, 255);
+    color: rgb(127, 195, 255);
     padding: 1%;
     text-decoration: none;
 
@@ -149,6 +159,7 @@
     margin: 0 auto;
     color: rgb(255, 255, 255);
     width: 60%;
+    max-width: 600px;
     background-color: rgba(255, 235, 205, 0.164);
     padding: 2%;
     border-top-right-radius: 15%;
@@ -164,7 +175,7 @@
 iframe {
 
     border-radius: 10px;
-    
+
 }
 
 
@@ -261,57 +272,66 @@ form {
     .bio {
 
         margin: 0 auto;
-        display: block;
+        /*display: block;*/
         text-align: justify;
         padding: 1%;
-
-    }
-
-    .row {
-
-        margin: 5% auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
 
-    .new {
+}
+
+.row {
+
+    margin: 5% auto;
+}
 
 
-        width: 100%;
-
-    }
-
-    .bio>img {
-
-        margin: 0 auto;
-        display: block;
-        width: auto;
-        text-align: center;
-    }
-
-    .formu {
-
-        width: auto;
-
-    }
-
-    form {
-
-        width: 70%;
-    }
-
-    .contacto {
-
-        width: auto;
-    }
-
-    .page-header>h1>small {
-
-        font-size: 0.5em;
-    }
+.new {
 
 
+    width: 100%;
 
-    /*
+}
+
+.bio>img {
+
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    text-align: center;
+}
+
+.formu {
+
+    width: auto;
+
+}
+
+form {
+
+
+    width: 100%;
+    max-width: 500px;
+
+
+}
+
+.contacto {
+
+    width: auto;
+}
+
+.page-header>h1>small {
+
+    font-size: 0.5em;
+}
+
+
+
+/*
 
     .slide {
 
@@ -334,15 +354,15 @@ form {
     }
 */
 
-    .botones {
+.botones {
 
-        margin: 0 auto;
-        text-align: center;
-        height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
 
 
 
-    }
+}
 
 
 }
@@ -365,7 +385,7 @@ footer {
     height: 130px;
     width: 90%;
     border-radius: 10px;
-   background-color: rgba(11, 1, 97, 0.308);
+    background-color: rgba(11, 1, 97, 0.308);
 
 
 }
